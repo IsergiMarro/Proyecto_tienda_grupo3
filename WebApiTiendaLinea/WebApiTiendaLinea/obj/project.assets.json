@@ -901,11 +901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Otros ordenadores\\Mi PC\\Universidad\\SEMESTRE VIII\\ANALISIS DE SISTEMAS II\\PROYECTO\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "projectUniqueName": "C:\\Users\\mercu\\OneDrive\\Escritorio\\ProyectoTienda\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
       "projectName": "WebApiTiendaLinea",
-      "projectPath": "G:\\Otros ordenadores\\Mi PC\\Universidad\\SEMESTRE VIII\\ANALISIS DE SISTEMAS II\\PROYECTO\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "projectPath": "C:\\Users\\mercu\\OneDrive\\Escritorio\\ProyectoTienda\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
       "packagesPath": "C:\\Users\\mercu\\.nuget\\packages\\",
-      "outputPath": "G:\\Otros ordenadores\\Mi PC\\Universidad\\SEMESTRE VIII\\ANALISIS DE SISTEMAS II\\PROYECTO\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
+      "outputPath": "C:\\Users\\mercu\\OneDrive\\Escritorio\\ProyectoTienda\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mercu\\AppData\\Roaming\\NuGet\\NuGet.Config",
