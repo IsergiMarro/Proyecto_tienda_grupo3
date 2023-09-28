@@ -2,8 +2,8 @@
 {
     public class clsDepartamento
     {
-        public int Id { get; set; }
-        public string Nombre { get; set;}
-        public int Municipio { get;}
+        public int IdDepartamento { get; set; }
+        public string Nombre { get; set; }
+        public int IdMunicipio { get; set; }
     }
 }

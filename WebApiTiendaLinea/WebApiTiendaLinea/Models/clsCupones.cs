@@ -1,15 +1,14 @@
 ﻿namespace WebApiTiendaLinea.Models
 {
-    public class clsCupones
+    public class clsCupon
     {
-        public int Id { get; set; }
-        public string Codigo { get; set; }
-        public int Desc { get; set; }
-        public string FechaV { get; set;}
-        public int producto { get; set; }
-        public String FechaC { get; set; }
-        public int Persona { get; set; }
-        public int Estado { get; set; }
-
+        public int IdCupon { get; set; }
+        public string CodigoCupon { get; set; }
+        public int Descuento { get; set; }
+        public DateTime FechaVencimiento { get; set; }
+        public int IdProducto { get; set; }
+        public DateTime FechaCanjeo { get; set; }
+        public int IdPersona { get; set; }
+        public int IdEstado { get; set; }
     }
 }
