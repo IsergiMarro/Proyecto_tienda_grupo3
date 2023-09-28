@@ -896,19 +896,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Comando_Maccafer\\.nuget\\packages\\": {}
+    "C:\\Users\\usser\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "projectUniqueName": "C:\\Users\\usser\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
       "projectName": "WebApiTiendaLinea",
-      "projectPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
-      "packagesPath": "C:\\Users\\Comando_Maccafer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
+      "projectPath": "C:\\Users\\usser\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "packagesPath": "C:\\Users\\usser\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usser\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Comando_Maccafer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -916,6 +921,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
