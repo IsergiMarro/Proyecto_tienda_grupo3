@@ -20,11 +20,11 @@ namespace WebApiTiendaLinea.Controllers
                 bool resultado = MetodoPago.Registrar(metodoPago);
                 if (resultado)
                 {
-                    return Ok("marca registrado exitosamente.");
+                    return Ok("metodo de pago registrado exitosamente.");
                 }
                 else
                 {
-                    return BadRequest("No se pudo registrar el marca.");
+                    return BadRequest("No se pudo registrar el metodo de pago.");
                 }
             }
             catch (Exception ex)
@@ -42,11 +42,11 @@ namespace WebApiTiendaLinea.Controllers
                 bool resultado = MetodoPago.Actualizar(metodoPago);
                 if (resultado)
                 {
-                    return Ok("marca actualizado exitosamente.");
+                    return Ok("metodo de pago actualizado exitosamente.");
                 }
                 else
                 {
-                    return BadRequest("No se pudo actualizar el marca.");
+                    return BadRequest("No se pudo actualizar el metodo de pago.");
                 }
             }
             catch (Exception ex)
@@ -64,11 +64,11 @@ namespace WebApiTiendaLinea.Controllers
                 bool resultado = MetodoPago.Eliminar(id);
                 if (resultado)
                 {
-                    return Ok("marca eliminado exitosamente.");
+                    return Ok("metodo de pago eliminado exitosamente.");
                 }
                 else
                 {
-                    return BadRequest("No se pudo eliminar el marca.");
+                    return BadRequest("No se pudo eliminar el metodo de pago.");
                 }
             }
             catch (Exception ex)
