@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "\\WebApiTiendaLinea",
-    "\\WebApiTiendaLinea\\WebApiTiendaLinea",
-    "\\WebApiTiendaLinea\\WebApiTiendaLinea\\Controllers",
-    "\\WebApiTiendaLinea\\WebApiTiendaLinea\\Models"
+    "",
+    "\\WebApiTiendaLinea"
   ],
   "PreviewInSolutionExplorer": false
 }
