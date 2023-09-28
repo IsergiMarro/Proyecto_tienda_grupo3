@@ -7,7 +7,7 @@ namespace WebApiTiendaLinea.Data
     {
         public static bool Registrar(clsPersona objPersona)
         {
-            using (SqlConnection objConexion =new SqlConnection(Conexiones.rutaConexion))
+            using (SqlConnection objConexion = new SqlConnection(Conexiones.rutaConexion))
             {
                 SqlCommand cmd = new SqlCommand("crudPersonas", objConexion);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -24,7 +24,7 @@ namespace WebApiTiendaLinea.Data
                 cmd.Parameters.AddWithValue("@direccion", objPersona.Direccion);
                 cmd.Parameters.AddWithValue("@id_municipio", objPersona.Municipio);
                 cmd.Parameters.AddWithValue("@id_departamento", objPersona.Departamento);
-                cmd.Parameters.AddWithValue("@opcion", objPersona.OPC);
+                cmd.Parameters.AddWithValue("@opcion, 4", objPersona.OPC);
 
                 try
                 {
@@ -110,7 +110,41 @@ namespace WebApiTiendaLinea.Data
                 }
             }
         }
+        public static bool Insertar(clsPersona objPersona)
+        {
+            using (SqlConnection objConexion = new SqlConnection(Conexiones.rutaConexion))
+            {
+                SqlCommand cmd = new SqlCommand("crudPersonas", objConexion);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
 
+                // Configura los parámetros para la inserción
+                cmd.Parameters.AddWithValue("@id_persona", objPersona.Id);
+                cmd.Parameters.AddWithValue("@nombre_persona", objPersona.Nombre);
+                cmd.Parameters.AddWithValue("@apellido_persona", objPersona.Apellido);
+                cmd.Parameters.AddWithValue("@contraseña", objPersona.Pass);
+                cmd.Parameters.AddWithValue("@correo_electronico", objPersona.Correo);
+                cmd.Parameters.AddWithValue("@fecha_nacimiento", objPersona.FechaN);
+                cmd.Parameters.AddWithValue("@id_genero", objPersona.Genero);
+                cmd.Parameters.AddWithValue("@DPI", objPersona.DPI);
+                cmd.Parameters.AddWithValue("@NIT", objPersona.NIT);
+                cmd.Parameters.AddWithValue("@id_tipo_persona", objPersona.TipoPersona);
+                cmd.Parameters.AddWithValue("@direccion", objPersona.Direccion);
+                cmd.Parameters.AddWithValue("@id_municipio", objPersona.Municipio);
+                cmd.Parameters.AddWithValue("@id_departamento", objPersona.Departamento);
+                cmd.Parameters.AddWithValue("@opcion", 1); // 1 para inserción
+
+                try
+                {
+                    objConexion.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
+            }
+        }
 
     }
 }
