@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
+    "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
+    "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "projectUniqueName": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
         "projectName": "WebApiTiendaLinea",
-        "projectPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "projectPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
         "packagesPath": "C:\\Users\\Comando_Maccafer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
+        "outputPath": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Comando_Maccafer\\AppData\\Roaming\\NuGet\\NuGet.Config",

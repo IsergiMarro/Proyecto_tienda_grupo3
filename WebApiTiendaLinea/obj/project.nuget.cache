@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SYvqeJKBe5I8y66l6DwSCDXRcSMi8BY9CBcWD4acD5mYR8iawWj86Loic86Zlp5Nq0G/zsaA5i2HI87HT+zXfQ==",
+  "dgSpecHash": "G3udN0g0QYGPmewpQm2/IEJ9jPtuiKku3EMgugV8tP4aSYkU3o4FE+kqp8h9+gFgXzdxN1TAhbFATuaj9uwmQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Comando_Maccafer\\source\\repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+  "projectFilePath": "C:\\Users\\Comando_Maccafer\\source\\repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Comando_Maccafer\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Comando_Maccafer\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
