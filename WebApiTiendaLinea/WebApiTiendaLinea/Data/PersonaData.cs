@@ -72,10 +72,8 @@ namespace WebApiTiendaLinea.Data
                             persona.Pass = dr["contraseña"].ToString();
                             persona.Correo = dr["correo_electronico"].ToString();
                             persona.FechaN = dr["fecha_nacimiento"].ToString();
+                            persona.Genero = dr["genero"].ToString();
 
-                            int genero;
-                            if (int.TryParse(dr["id_genero"].ToString(), out genero))
-                                persona.Genero = genero;
 
                             int dpi;
                             if (int.TryParse(dr["DPI"].ToString(), out dpi))
@@ -85,19 +83,13 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["NIT"].ToString(), out nit))
                                 persona.NIT = nit;
 
-                            int tipoPersona;
-                            if (int.TryParse(dr["id_tipo_persona"].ToString(), out tipoPersona))
-                                persona.TipoPersona = tipoPersona;
+                            persona.Rol = dr["Rol"].ToString();
 
                             persona.Direccion = dr["direccion"].ToString();
 
-                            int municipio;
-                            if (int.TryParse(dr["id_municipio"].ToString(), out municipio))
-                                persona.Municipio = municipio;
+                            persona.Municipio = dr["municipio"].ToString();
 
-                            int departamento;
-                            if (int.TryParse(dr["id_departamento"].ToString(), out departamento))
-                                persona.Departamento = departamento;
+                            persona.Departamento = dr["departamento"].ToString();
 
                             lstPersona.Add(persona);
                         }
