@@ -46,6 +46,7 @@ namespace WebApiTiendaLinea.Data
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id_municipio", municipio.Id);
                     cmd.Parameters.AddWithValue("@nombre", municipio.Municipio);
+                    cmd.Parameters.AddWithValue("@id_departamento", municipio.id_departamento);
                     cmd.Parameters.AddWithValue("@opcion", 2);
                     cmd.ExecuteNonQuery();
                     return true;
@@ -105,6 +106,9 @@ namespace WebApiTiendaLinea.Data
                                 municipio.Id = id;
 
                             municipio.Municipio = dr["nombre"].ToString();
+                            lstmunicipio.Add(municipio);
+
+                            municipio.Departamento = dr["Departamento"].ToString();
                             lstmunicipio.Add(municipio);
 
                         }
