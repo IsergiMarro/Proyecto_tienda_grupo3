@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\desarrollo web proyecto final\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
+    "C:\\Users\\mercu\\OneDrive\\Escritorio\\Proyecto Analisis\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\desarrollo web proyecto final\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
+    "C:\\Users\\mercu\\OneDrive\\Escritorio\\Proyecto Analisis\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\desarrollo web proyecto final\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "projectUniqueName": "C:\\Users\\mercu\\OneDrive\\Escritorio\\Proyecto Analisis\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
         "projectName": "WebApiTiendaLinea",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\desarrollo web proyecto final\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\desarrollo web proyecto final\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
+        "projectPath": "C:\\Users\\mercu\\OneDrive\\Escritorio\\Proyecto Analisis\\WebApiTiendaLinea\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "packagesPath": "C:\\Users\\mercu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mercu\\OneDrive\\Escritorio\\Proyecto Analisis\\WebApiTiendaLinea\\WebApiTiendaLinea\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mercu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

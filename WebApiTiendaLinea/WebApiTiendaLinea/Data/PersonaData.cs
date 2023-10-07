@@ -16,8 +16,8 @@ namespace WebApiTiendaLinea.Data
                 SqlCommand cmd = new SqlCommand("crudPersonas", objConexion);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id_persona", objPersona.Id);
-                cmd.Parameters.AddWithValue("@nombre_persona", objPersona.Nombre);
-                cmd.Parameters.AddWithValue("@apellido_persona", objPersona.Apellido);
+                cmd.Parameters.AddWithValue("@nombre", objPersona.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", objPersona.Apellido);
                 cmd.Parameters.AddWithValue("@contraseña", objPersona.Pass);
                 cmd.Parameters.AddWithValue("@correo_electronico", objPersona.Correo);
                 cmd.Parameters.AddWithValue("@fecha_nacimiento", objPersona.FechaN);
@@ -67,8 +67,8 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["id_persona"].ToString(), out id))
                                 persona.Id = id;
 
-                            persona.Nombre = dr["nombre_persona"].ToString();
-                            persona.Apellido = dr["apellido_persona"].ToString();
+                            persona.Nombre = dr["nombre"].ToString();
+                            persona.Apellido = dr["apellido"].ToString();
                             persona.Pass = dr["contraseña"].ToString();
                             persona.Correo = dr["correo_electronico"].ToString();
                             persona.FechaN = dr["fecha_nacimiento"].ToString();
@@ -123,8 +123,8 @@ namespace WebApiTiendaLinea.Data
 
                 // Configura los parámetros para la inserción
                 cmd.Parameters.AddWithValue("@id_persona", objPersona.Id);
-                cmd.Parameters.AddWithValue("@nombre_persona", objPersona.Nombre);
-                cmd.Parameters.AddWithValue("@apellido_persona", objPersona.Apellido);
+                cmd.Parameters.AddWithValue("@nombre", objPersona.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", objPersona.Apellido);
                 cmd.Parameters.AddWithValue("@contraseña", objPersona.Pass);
                 cmd.Parameters.AddWithValue("@correo_electronico", objPersona.Correo);
                 cmd.Parameters.AddWithValue("@fecha_nacimiento", objPersona.FechaN);
@@ -157,8 +157,8 @@ namespace WebApiTiendaLinea.Data
                 SqlCommand cmd = new SqlCommand("crudPersonas", objConexion);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id_persona", objPersona.Id);
-                cmd.Parameters.AddWithValue("@nombre_persona", objPersona.Nombre);
-                cmd.Parameters.AddWithValue("@apellido_persona", objPersona.Apellido);
+                cmd.Parameters.AddWithValue("@nombre", objPersona.Nombre);
+                cmd.Parameters.AddWithValue("@apellido", objPersona.Apellido);
                 cmd.Parameters.AddWithValue("@contraseña", objPersona.Pass);
                 cmd.Parameters.AddWithValue("@correo_electronico", objPersona.Correo);
                 cmd.Parameters.AddWithValue("@fecha_nacimiento", objPersona.FechaN);
