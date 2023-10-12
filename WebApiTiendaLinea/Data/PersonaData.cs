@@ -107,9 +107,9 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static List<clsPersona> Listar()
+        public static List<clsPersona3> Listar()
         {
-            List<clsPersona> lstPersona = new List<clsPersona>();
+            List<clsPersona3> lstPersona = new List<clsPersona3>();
 
             using (SqlConnection objConexion = new SqlConnection(Conexiones.rutaConexion))
             {
@@ -126,7 +126,7 @@ namespace WebApiTiendaLinea.Data
                     {
                         while (dr.Read())
                         {
-                            clsPersona persona = new clsPersona();
+                            clsPersona3 persona = new clsPersona3();
 
                             int id;
                             if (int.TryParse(dr["id_persona"].ToString(), out id))
@@ -142,9 +142,8 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["telefono"].ToString(), out Telefono))
                                 persona.tel = Telefono;
 
-                            int Genero;
-                            if (int.TryParse(dr["id_genero"].ToString(), out Genero))
-                                persona.Genero = Genero;
+                            persona.Genero = dr["genero"].ToString();
+
 
                             int dpi;
                             if (int.TryParse(dr["DPI"].ToString(), out dpi))
@@ -154,19 +153,13 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["NIT"].ToString(), out nit))
                                 persona.NIT = nit;
 
-                            int tipoPersona;
-                            if (int.TryParse(dr["id_tipo_persona"].ToString(), out tipoPersona))
-                                persona.TipoPersona = tipoPersona;
+                            persona.TipoPersona = dr["Rol"].ToString();
 
                             persona.Direccion = dr["direccion"].ToString();
 
-                            int municipio;
-                            if (int.TryParse(dr["id_municipio"].ToString(), out municipio))
-                                persona.Municipio = municipio;
+                            persona.Municipio = dr["municipio"].ToString();
 
-                            int departamento;
-                            if (int.TryParse(dr["id_departamento"].ToString(), out departamento))
-                                persona.Departamento = departamento;
+                            persona.Departamento = dr["departamento"].ToString();
 
                             lstPersona.Add(persona);
                         }
@@ -175,7 +168,7 @@ namespace WebApiTiendaLinea.Data
                 }
                 catch (SqlException ex)
                 {
-                    lstPersona.Add(new clsPersona()
+                    lstPersona.Add(new clsPersona3()
                     {
 
                     });

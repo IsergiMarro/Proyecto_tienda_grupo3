@@ -80,7 +80,7 @@ namespace WebApiTiendaLinea.Controllers
         {
             try
             {
-                List<clsPersona> personas = PersonaData.Listar();
+                List<clsPersona3> personas = PersonaData.Listar();
             return Ok(personas);
             }
             catch (Exception ex)
