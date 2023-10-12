@@ -24,7 +24,6 @@ namespace WebApiTiendaLinea.Data
                     //cmd.Parameters.AddWithValue("@id_proveedor", proveedor.Id);
                     cmd.Parameters.AddWithValue("@nombre_proveedor", proveedor.Nombre);
                     cmd.Parameters.AddWithValue("@telefono_proveedro", proveedor.Tel);
-                    cmd.Parameters.AddWithValue("@descripcion", proveedor.Descripcion);
                     cmd.Parameters.AddWithValue("@direccion", proveedor.Direccion);
                     cmd.Parameters.AddWithValue("@opcion", 1);
 
@@ -51,7 +50,6 @@ namespace WebApiTiendaLinea.Data
                     cmd.Parameters.AddWithValue("@id_proveedor", proveedor.Id);
                     cmd.Parameters.AddWithValue("@nombre_proveedor", proveedor.Nombre);
                     cmd.Parameters.AddWithValue("@telefono_proveedro", proveedor.Tel);
-                    cmd.Parameters.AddWithValue("@descripcion", proveedor.Descripcion);
                     cmd.Parameters.AddWithValue("@direccion", proveedor.Direccion);
                     cmd.Parameters.AddWithValue("@opcion", 2);
                     cmd.ExecuteNonQuery();
@@ -116,7 +114,6 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["telefono_proveedro"].ToString(), out tel))
                                 proveedor.Tel = tel;
 
-                            proveedor.Descripcion = dr["descripcion"].ToString();
                             proveedor.Direccion = dr["direccion"].ToString();
 
                             lstProveedores.Add(proveedor);
