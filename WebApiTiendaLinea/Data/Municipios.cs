@@ -35,7 +35,7 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static bool Actualizar(clsMunicipio municipio)
+        public static bool Actualizar(clsMunicipio3 municipio)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -47,7 +47,7 @@ namespace WebApiTiendaLinea.Data
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id_municipio", municipio.Id);
                     cmd.Parameters.AddWithValue("@nombre", municipio.Nombre);
-                   /// cmd.Parameters.AddWithValue("@id_departamento", municipio.IdMunicipio);
+                    cmd.Parameters.AddWithValue("@id_departamento", municipio.IdMunicipio);
                     cmd.Parameters.AddWithValue("@opcion", 2);
                     cmd.ExecuteNonQuery();
                     return true;

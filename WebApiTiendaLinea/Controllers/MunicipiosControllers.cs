@@ -33,7 +33,7 @@ namespace WebApiTiendaLinea.Controllers
 
         [HttpPut]
         [Route("Actualizar")]
-        public IActionResult Actualizarmunicipio([FromBody] clsMunicipio municipio)
+        public IActionResult Actualizarmunicipio([FromBody] clsMunicipio3 municipio)
         {
             try
             {
