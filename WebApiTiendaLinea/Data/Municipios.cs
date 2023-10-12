@@ -106,13 +106,10 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["id_municipio"].ToString(), out id))
                                 municipio.Id = id;
 
+                            municipio.departamento = dr["Departamento"].ToString();
 
                             municipio.Nombre = dr["nombre"].ToString();
                             lstmunicipio.Add(municipio);
-
-                            int idM;
-                            if (int.TryParse(dr["id_departamento"].ToString(), out idM))
-                                municipio.IdMunicipio = idM;
 
                         }
                         return lstmunicipio;
