@@ -896,19 +896,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mercu\\.nuget\\packages\\": {}
+    "C:\\Users\\usser\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mercu\\Source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "projectUniqueName": "C:\\Users\\usser\\source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
       "projectName": "WebApiTiendaLinea",
-      "projectPath": "C:\\Users\\mercu\\Source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
-      "packagesPath": "C:\\Users\\mercu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mercu\\Source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\obj\\",
+      "projectPath": "C:\\Users\\usser\\source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+      "packagesPath": "C:\\Users\\usser\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usser\\source\\Repos\\IsergiMarro\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mercu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -916,6 +921,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -962,7 +968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
