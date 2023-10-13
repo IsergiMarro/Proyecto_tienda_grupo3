@@ -94,9 +94,9 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static List<clsProducto> Listar()
+        public static List<clsProducto2> Listar()
         {
-            List<clsProducto> lstproductos = new List<clsProducto>();
+            List<clsProducto2> lstproductos = new List<clsProducto2>();
 
             using (SqlConnection objConexion = new SqlConnection(Conexiones.rutaConexion))
             {
@@ -112,7 +112,7 @@ namespace WebApiTiendaLinea.Data
                     {
                         while (dr.Read())
                         {
-                            clsProducto productos = new clsProducto();
+                            clsProducto2 productos = new clsProducto2();
 
                             int id;
                             if (int.TryParse(dr["id_productos"].ToString(), out id))
@@ -130,17 +130,13 @@ namespace WebApiTiendaLinea.Data
                             if (int.TryParse(dr["stock"].ToString(), out Stok))
                                 productos.Stock = Stok;
 
-                            int probeedor;
-                            if (int.TryParse(dr["id_proveedor"].ToString(), out probeedor))
-                                productos.Proveedor = probeedor;
+                        
 
-                            int categoria;
-                            if (int.TryParse(dr["id_categoria_producto"].ToString(), out categoria))
-                                productos.Categoria = categoria;
+                            productos.Proveedor = dr["proveedor"].ToString();                      
 
-                            int marca;
-                            if (int.TryParse(dr["id_marca"].ToString(), out marca))
-                                productos.Marca = marca;
+                            productos.Categoria = dr["categoria"].ToString();
+
+                            productos.Marca = dr["marca"].ToString();
 
                             productos.Imagen = dr["imagen_producto"].ToString();
 
@@ -152,7 +148,7 @@ namespace WebApiTiendaLinea.Data
                 }
                 catch (SqlException ex)
                 {
-                    lstproductos.Add(new clsProducto()
+                    lstproductos.Add(new clsProducto2()
                     {
                      //   Error = ex.Message
                     });

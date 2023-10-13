@@ -81,7 +81,7 @@ namespace WebApiTiendaLinea.Controllers
         [HttpGet("Listar")]
         public IActionResult ListarPedidos()
         {
-            List<clsProducto> producto = Productos.Listar();
+            List<clsProducto2> producto = Productos.Listar();
             return Ok(producto);
         }
     }
