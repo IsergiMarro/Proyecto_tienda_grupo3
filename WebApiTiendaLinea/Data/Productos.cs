@@ -94,9 +94,9 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static List<clsProducto2> Listar()
+        public static List<clsProducto3> Listar()
         {
-            List<clsProducto2> lstproductos = new List<clsProducto2>();
+            List<clsProducto3> lstproductos = new List<clsProducto3>();
 
             using (SqlConnection objConexion = new SqlConnection(Conexiones.rutaConexion))
             {
@@ -112,7 +112,7 @@ namespace WebApiTiendaLinea.Data
                     {
                         while (dr.Read())
                         {
-                            clsProducto2 productos = new clsProducto2();
+                            clsProducto3 productos = new clsProducto3();
 
                             int id;
                             if (int.TryParse(dr["id_productos"].ToString(), out id))
@@ -148,7 +148,7 @@ namespace WebApiTiendaLinea.Data
                 }
                 catch (SqlException ex)
                 {
-                    lstproductos.Add(new clsProducto2()
+                    lstproductos.Add(new clsProducto3()
                     {
                      //   Error = ex.Message
                     });
