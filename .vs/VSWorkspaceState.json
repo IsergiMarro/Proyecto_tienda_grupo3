@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WebApiTiendaLinea",
+    "\\WebApiTiendaLinea\\Data",
+    "\\WebApiTiendaLinea\\Models"
   ],
-  "SelectedNode": "\\WebApiTiendaLinea.sln",
+  "SelectedNode": "\\WebApiTiendaLinea\\Data\\Productos.cs",
   "PreviewInSolutionExplorer": false
 }
