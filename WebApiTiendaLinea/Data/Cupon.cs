@@ -114,9 +114,10 @@ namespace WebApiTiendaLinea.Data
                             cupon.IdCupon = Convert.ToInt32(dr["id_cupon"]);
                             cupon.CodigoCupon = dr["codigo_cupon"].ToString();
                             cupon.Descuento = Convert.ToInt32(dr["descuento"]);
-                            cupon.FechaVencimiento = Convert.ToDateTime(dr["fecha_vencimiento"]);
+                            cupon.FechaVencimiento = dr["fecha_vencimiento"].ToString();// cambio 
                             cupon.IdProducto = Convert.ToInt32(dr["id_producto"]);
-                            cupon.FechaCanjeo = Convert.ToDateTime(dr["fecha_canjeo"]);
+                            ///cupon.FechaCanjeo = Convert.ToDateTime(dr["fecha_canjeo"]);
+                            cupon.FechaCanjeo = dr["fecha_canjeo"].ToString();//cambio
                             cupon.IdPersona = Convert.ToInt32(dr["id_persona"]);
                             cupon.IdEstado = Convert.ToInt32(dr["id_estado"]);
                             lstCupones.Add(cupon);
