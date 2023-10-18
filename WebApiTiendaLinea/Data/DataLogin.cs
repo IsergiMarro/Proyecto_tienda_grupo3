@@ -7,7 +7,7 @@ namespace WebApiTiendaLinea.Data
         public static bool login(clsLogin log)
         {
             bool result = false;
-            if (log.user=="luis"&&log.password=="umg123") { 
+            if (log.username == "luis"&&log.password=="umg123") { 
             result = true;
             }
             return result;

@@ -5,16 +5,20 @@ using WebApiTiendaLinea.Models;
 namespace WebApiTiendaLinea.Controllers
 {
     [ApiController]
-    [Route("Login")]
+    [Route("api/Login")]
     public class LoginController : ControllerBase
     {
         [HttpPost]
         [Route("Iniciar")]
         public IActionResult Iniciar([FromBody] clsLogin login)
         {
-            bool resultado = DataLogin.login(login);
-            
-                return Ok(resultado);
+            bool resultado = false;//DataLogin.login(login);
+
+            if (login.username == "admin" && login.password == "1234")
+                resultado = true;
+
+
+            return Ok(resultado);
            
         }
     }
