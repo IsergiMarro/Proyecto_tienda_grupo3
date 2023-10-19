@@ -10,7 +10,7 @@ namespace WebApiTiendaLinea.Data
     {
         private static string connectionString = Conexiones.rutaConexion;
 
-        public static bool Registrar(clsComentarios2 comentario)
+        public static bool Registrar(clsComentarios comentario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -34,7 +34,7 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static bool Actualizar(clsComentarios comentario)
+        public static bool Actualizar(clsComentarios3 comentario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -82,9 +82,9 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static List<clsComentarios> Listar()
+        public static List<clsComentarios2> Listar()
         {
-            List<clsComentarios> lstComentarios = new List<clsComentarios>();
+            List<clsComentarios2> lstComentarios = new List<clsComentarios2>();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -100,10 +100,12 @@ namespace WebApiTiendaLinea.Data
                     {
                         while (dr.Read())
                         {
-                            clsComentarios comentario = new clsComentarios();
-                            comentario.Id = Convert.ToInt32(dr["id_comentario"]);
+                            clsComentarios2 comentario = new clsComentarios2();
+                            
                             comentario.Descripcion = dr["descripcion"].ToString();
-                            comentario.Persona = Convert.ToInt32(dr["id_persona"]);
+                            comentario.nombre = dr["nombre"].ToString();
+                            comentario.apellido = dr["apellido"].ToString();
+                            
                             lstComentarios.Add(comentario);
                         }
                     }

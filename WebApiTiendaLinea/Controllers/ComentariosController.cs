@@ -12,7 +12,7 @@ namespace WebApiTiendaLinea.Controllers
     {
         [HttpPost]
         [Route("Registrar")]
-        public IActionResult RegistrarComentario([FromBody] clsComentarios2 comentario)
+        public IActionResult RegistrarComentario([FromBody] clsComentarios comentario)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace WebApiTiendaLinea.Controllers
 
         [HttpPut]
         [Route("Actualizar")]
-        public IActionResult ActualizarComentario([FromBody] clsComentarios comentario)
+        public IActionResult ActualizarComentario([FromBody] clsComentarios3 comentario)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace WebApiTiendaLinea.Controllers
         {
             try
             {
-                List<clsComentarios> comentarios = Comentarios.Listar();
+                List<clsComentarios2> comentarios = Comentarios.Listar();
                 return Ok(comentarios);
             }
             catch (Exception ex)
