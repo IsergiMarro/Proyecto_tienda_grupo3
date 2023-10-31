@@ -82,7 +82,7 @@ namespace WebApiTiendaLinea.Controllers
         {
             try
             {
-                List<clsCategoria> categoriasProductos = Categoria.Listar();
+                List<clsCategoria2> categoriasProductos = Categoria.Listar();
                 return Ok(categoriasProductos);
             }
             catch (Exception ex)

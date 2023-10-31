@@ -21,6 +21,7 @@ namespace WebApiTiendaLinea.Data
                     SqlCommand cmd = new SqlCommand("crudCategoriaProductos", connection);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@descripcion", categoriaProducto.descripcion);
+                    cmd.Parameters.AddWithValue("@estado", categoriaProducto.estado);
                     cmd.Parameters.AddWithValue("@opcion", 1);
 
                     cmd.ExecuteNonQuery();
@@ -45,6 +46,7 @@ namespace WebApiTiendaLinea.Data
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@id", categoriaProducto.id_categoria_producto); 
                     cmd.Parameters.AddWithValue("@descripcion", categoriaProducto.descripcion);
+                    cmd.Parameters.AddWithValue("@estado", categoriaProducto.estado);
                     cmd.Parameters.AddWithValue("@opcion", 2);
 
                     cmd.ExecuteNonQuery();
@@ -80,9 +82,9 @@ namespace WebApiTiendaLinea.Data
             }
         }
 
-        public static List<clsCategoria> Listar()
+        public static List<clsCategoria2> Listar()
         {
-            List<clsCategoria> lstCategoriasProductos = new List<clsCategoria>();
+            List<clsCategoria2> lstCategoriasProductos = new List<clsCategoria2>();
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -98,9 +100,10 @@ namespace WebApiTiendaLinea.Data
                     {
                         while (dr.Read())
                         {
-                            clsCategoria categoriaProducto = new clsCategoria();
+                            clsCategoria2 categoriaProducto = new clsCategoria2();
                             categoriaProducto.id_categoria_producto = Convert.ToInt32(dr["id_categoria_producto"]);
                             categoriaProducto.descripcion = dr["descripcion"].ToString();
+                            categoriaProducto.estado = dr["Estado"].ToString();
                             lstCategoriasProductos.Add(categoriaProducto);
                         }
                     }
