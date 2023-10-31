@@ -134,7 +134,6 @@ namespace WebApiTiendaLinea.Data
 
                             persona.Nombre = dr["nombre"].ToString();
                             persona.Apellido = dr["apellido"].ToString();
-                            persona.Pass = dr["contraseña"].ToString();
                             persona.Correo = dr["correo_electronico"].ToString();
                             persona.FechaN = dr["fecha_nacimiento"].ToString();
 

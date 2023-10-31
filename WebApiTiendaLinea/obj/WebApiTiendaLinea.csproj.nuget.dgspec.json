@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sinay\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
+    "C:\\Users\\mercu\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sinay\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
+    "C:\\Users\\mercu\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sinay\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "projectUniqueName": "C:\\Users\\mercu\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
         "projectName": "WebApiTiendaLinea",
-        "projectPath": "C:\\Users\\Sinay\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
-        "packagesPath": "C:\\Users\\Sinay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinay\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\obj\\",
+        "projectPath": "C:\\Users\\mercu\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\WebApiTiendaLinea.csproj",
+        "packagesPath": "C:\\Users\\mercu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mercu\\Source\\Repos\\Proyecto_tienda_grupo3_backend\\WebApiTiendaLinea\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sinay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mercu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
