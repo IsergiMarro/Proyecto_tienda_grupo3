@@ -18,8 +18,7 @@
 
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public int IdMunicipio { get; set; }
-        public string departamento { get; set; }
+        public string id_departamento { get; set; }
 
     }
 }

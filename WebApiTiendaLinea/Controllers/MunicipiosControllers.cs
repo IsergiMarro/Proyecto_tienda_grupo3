@@ -40,7 +40,7 @@ namespace WebApiTiendaLinea.Controllers
                 bool resultado = Municipios.Actualizar(municipio);
                 if (resultado)
                 {
-                    return Ok("marca actualizado exitosamente.");
+                    return Ok("Municipo actualizado exitosamente.");
                 }
                 else
                 {
